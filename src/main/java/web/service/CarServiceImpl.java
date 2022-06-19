@@ -7,10 +7,10 @@ import web.model.Car;
 import java.util.List;
 
 @Component
-public class CarService {
+public class CarServiceImpl implements CarService{
     private final CarDAO carDAO;
     @Autowired
-    public CarService(CarDAO carDAO) {
+    public CarServiceImpl(CarDAO carDAO) {
         this.carDAO = carDAO;
     }
 

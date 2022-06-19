@@ -6,10 +6,10 @@ import web.model.Car;
 import java.util.ArrayList;
 import java.util.List;
 @Component
-public class CarDAO {
+public class CarDAOImpl implements CarDAO{
     private final List<Car> cars = new ArrayList<>();
 
-    public CarDAO() {
+    public CarDAOImpl() {
         cars.add(new Car("BMW", "X6",2020));
         cars.add(new Car("Mercedes Benz", "S-Class",2021));
         cars.add(new Car("Jaguar", "XJ",2018));
